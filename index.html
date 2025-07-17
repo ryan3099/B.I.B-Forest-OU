@@ -1,67 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B.I.B Forest OU</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
-    }
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #000000; color: #fff; }
     header {
-      background-color: #003366;
+      background: #000;
+      color: gold;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid gold;
+    }
+    header h1 { margin: 0; font-size: 2.5em; }
+    header p { font-size: 1.1em; }
+    nav a {
+      color: gold;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
       color: white;
-      padding: 30px 20px;
+    }
+    .hero {
+      background: url('https://i.pinimg.com/originals/30/02/db/3002dbbc92e8189aa9795b88d7840ba8.jpg') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      animation: zoomIn 6s ease-in-out infinite alternate;
     }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+    .hero h2 {
+      font-size: 3em;
+      color: white;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px 40px;
+      border: 3px solid gold;
+      border-radius: 10px;
     }
-    h1, h2 {
-      color: #003366;
-    }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
+    .coming-soon {
+      background: linear-gradient(to right, gold, #ffd700);
+      color: black;
+      text-align: center;
+      padding: 120px 20px;
+      font-size: 3.5em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px #333;
     }
     footer {
-      background-color: #003366;
-      color: white;
+      background: #111;
+      color: gold;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      padding: 30px 20px;
+      font-size: 0.9em;
+    }
+    @keyframes zoomIn {
+      0% { background-size: 100%; }
+      100% { background-size: 110%; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <div>
+      <h1>B.I.B Forest OU</h1>
+      <p>tn 2-2 Johvi, 41531 Estonia | contact@bibf.shop | +37258261649</p>
+    </div>
+    <nav>
+      <a href="#">Willkommen</a>
+      <a href="#">Kontakt</a>
+      <a href="#">Impressum</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
+  <div class="hero">
+    <h2>B.I.B Forest OU – innovativ. kompetent. zuverlässig.</h2>
+  </div>
 
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
-    </div>
-  </section>
+  <div class="coming-soon">
+    COMING SOON
+  </div>
 
   <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
+    <p>© 2025 B.I.B Forest OU. All rights reserved. | Designed with elegance & precision</p>
   </footer>
 </body>
 </html>
